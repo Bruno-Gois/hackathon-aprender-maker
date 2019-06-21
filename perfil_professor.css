@@ -1,0 +1,27 @@
+
+.header_perfil {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_perfil .row .col-4 img {
+    float: right
+} 
+
+.titulo_orientador {
+    text-align: center;
+    margin-right: 82px; 
+} 
+
+.images_portfolio img{
+    width: 30%;
+	float: left;
+    margin: 1.66%;
+    cursor: pointer;
+}
+
+.tablink {
+    width: 100%;
+}

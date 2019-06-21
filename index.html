@@ -42,18 +42,18 @@
         </div>
 
         <div class="row">
-            <div class="col">   
-                <button type="button" class="btn btn-success btn-block">Portfolio</button>
+            <div class="col-md-4">   
+                <button type="button" class="btn btn-success btn-lg tablink" id="defaultOpen" onclick="openInfo('portfolio', this)">Portfolio</button>
             </div>
-            <div class="col">
-                    <button type="button" class="btn btn-success btn-block">Bio</button>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-success btn-lg tablink" onclick="openInfo('cv', this)">Bio</button>
             </div>
-            <div class="col">
-                    <button type="button" class="btn btn-success btn-block">Recomendações</button>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-success btn-lg tablink" onclick="openInfo('recomendacoes', this)">Recomendações</button>
             </div>
         </div>
 
-        <div class="images_portfolio">
+        <div id="portfolio" class="tabcontent images_portfolio">
             <a data-toggle="modal" data-target="#exampleModalCenter">
                 <img src="assets/exemplo_ft_portfolio_1.jpg">
             </a>
@@ -63,7 +63,13 @@
             <img src="assets/exemplo_ft_portfolio_5.jpg">
             <img src="assets/exemplo_ft_portfolio_6.jpg">
         </div>
+        <div id="cv" class="tabcontent">
+            CV  
+        </div>
 
+        <div id="recomendacoes" class="tabcontent">
+            RECOMENDS
+        </div>
         <div class="modal fade bd-example-modal-xl" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                 <div class="modal-content">
@@ -83,6 +89,6 @@
             </div>
         </div>
     </div>
-    
+    <script src="index.js"></script>
 </body>
 </html>

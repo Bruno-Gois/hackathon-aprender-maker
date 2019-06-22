@@ -71,6 +71,11 @@ button img {
     height:auto;
 }
 
+#logo {
+    max-width:50px;
+    height:auto;
+}
+
 #fotoPerfil {
     width: 75%; 
     height: 100%; 

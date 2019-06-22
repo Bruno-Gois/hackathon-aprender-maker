@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Perfil do Professor</title>
+    <title>Perfil do Aluno</title>
     <link rel="stylesheet" href="perfil_professor.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -15,8 +15,14 @@
 <body>
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="../index/index.html">
-            logo - somos maker
+            <img id="logo" src="../assets/logo.jpg">
         </a>
+
+        <div class="btn-group" role="group">
+            <form><button formaction="../form.html" class="btn btn-dark">CRIAR PROJETO</button></form>
+            <button type="button" class="btn btn-dark">ACOMPANHAR PROJETOS</button>
+        </div>
+
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -27,46 +33,35 @@
         <div class="row">
             <div class="col-4">
                 <div class="card">
-                        <img id="fotoPerfil" src="../assets/ft_perfil_professor.jpg" class="card-img-top" alt="...">
+                        <img id="fotoPerfil" src="../assets/ft_perfil_lorena.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div class="card-profile">
-                                <h4 class="card-title">Leonardo Campos</h4>
-                                <h5>Professor de Novas Habilidades</h5>
-                                <i class="fas fa-map-marker-alt"></i>  Brasília, Brasil
+                                <h4 class="card-title">Lorena Campos</h4>
+                                <h5>Aluna no Colégio Chicão de São Sebastião</h5>
+                                <i class="fas fa-map-marker-alt"></i>  São Sebastião, Brasil
                             </div>
                                 
                             <br>
                             <p>Recomendações<button class="dados">55</button></p>
-                            <p>Projetos já realizados<span class="dados">12</span></p>
-
+                            <p>Projetos já realizados<span class="dados">9</span></p>
                             <br>
-
-                            <div class="btn-group" role="group">
-                                <form><button formaction="../form.html" class="btn btn-light">CRIAR PROJETO</button></form>
-                                <button type="button" class="btn btn-light">GERENCIAR PROJETOS</button>
-                            </div>
-
-                            <br><br>
-
                             <div class="accordion" id="accordionExample">
                                     <div class="card">
                                       <div class="card-header" id="headingOne">
                                         <h2 class="mb-0">
                                           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            CV
+                                            Recomendações
                                           </button>
                                         </h2>
                                       </div>
                                   
                                       <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                         <div class="card-body">
-                                            Formaçao Academica Graduado em Administraçao de Empresas - Universidade de Brasilia
-                                            <br><br>
-                                            Experiencia Profissional: -  Professor de novas habilidades para alunos de ensino médio
-                                            Coordenador de Operaçoes de Jornalismo - TV Globo
-                                            <br><br>
-                                            Cursos complementares: Intercambio Canada
-                                        </div>
+                                            "Lorena é uma aluna super curiosa, gosta de propor novas ideias, 
+                                                tem notável facilidade com o mundo criativo, certamente será uma grande artista"
+                                            <br>
+                                            <button class="btn">Ler mais</button>
+                                            </div>
                                       </div>
                                     </div>
                             </div>
@@ -81,17 +76,15 @@
                         <a data-toggle="modal" data-target="#exampleModalCenter">
                             <img src="../assets/exemplo_ft_portfolio_1.jpg">
                         </a>
+                        <img src="../assets/fts_portfolio/port_11.jpg">
                         <img src="../assets/exemplo_ft_portfolio_5.jpg">
                         <img src="../assets/exemplo_ft_portfolio_6.jpg">
                         <img src="../assets/exemplo_ft_portfolio_2.jpg">
                         <img src="../assets/exemplo_ft_portfolio_4.jpg">
+                        <img src="../assets/fts_portfolio/port_1.jpg">
                         <img src="../assets/exemplo_ft_portfolio_3.jpg">
-                        <img src="../assets/exemplo_ft_portfolio_2.jpg">
-                        <img src="../assets/exemplo_ft_portfolio_4.jpg">
-                        <img src="../assets/exemplo_ft_portfolio_3.jpg">                        
-                        <img src="../assets/exemplo_ft_portfolio_2.jpg">
-                        <img src="../assets/exemplo_ft_portfolio_4.jpg">
-                        <img src="../assets/exemplo_ft_portfolio_3.jpg">
+                        <img src="../assets/fts_portfolio/port_5.jpg">
+
                 </div>
             </div>
 

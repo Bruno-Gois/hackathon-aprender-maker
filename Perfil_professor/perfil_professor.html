@@ -46,7 +46,7 @@
                 <button type="button" class="btn btn-success btn-lg tablink" id="defaultOpen" onclick="openInfo('portfolio', this)">Portfolio</button>
             </div>
             <div class="col-md-4">
-                <button type="button" class="btn btn-success btn-lg tablink" onclick="openInfo('cv', this)">Bio</button>
+                <button type="button" class="btn btn-success btn-lg tablink" onclick="openInfo('cv', this)">Currículo</button>
             </div>
             <div class="col-md-4">
                 <button type="button" class="btn btn-success btn-lg tablink" onclick="openInfo('recomendacoes', this)">Recomendações</button>
@@ -57,11 +57,11 @@
             <a data-toggle="modal" data-target="#exampleModalCenter">
                 <img src="../assets/exemplo_ft_portfolio_1.jpg">
             </a>
-            <img src="../assets/exemplo_ft_portfolio_2.jpg">
-            <img src="../assets/exemplo_ft_portfolio_3.jpg">
-            <img src="../assets/exemplo_ft_portfolio_4.jpg">
             <img src="../assets/exemplo_ft_portfolio_5.jpg">
             <img src="../assets/exemplo_ft_portfolio_6.jpg">
+            <img src="../assets/exemplo_ft_portfolio_2.jpg">
+            <img src="../assets/exemplo_ft_portfolio_4.jpg">
+            <img src="../assets/exemplo_ft_portfolio_3.jpg">
         </div>
         <div id="cv" class="tabcontent">
             CV  
@@ -74,17 +74,69 @@
             <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                 <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../assets/exemplo_ft_portfolio_1.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../assets/exemplo_ft_portfolio_5.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../assets/exemplo_ft_portfolio_2.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../assets/exemplo_ft_portfolio_4.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="header_modal">
+                                    <h5>Escola X</h5><img src="../assets/logo_escola.jpg">
+                                    <h5>Orientador (mini_foto_perfil)</h5>
+                                </div>
+                                <div class="jumbotron">
+                                        <h2 class="display-4">Projeto Orientação profissional</h2>
+                                        <p class="lead">O projeto orientação profissional nasceu a partir da sede dos alunos para vivenciar na prática áreas de interesse pessoal. Organizamos 10 oficinas, em diversas áreas, e simulamos o mundo real dentro da escola.</p>
+                                        
+                                        <h2>Equipe</h2>
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-secondary"><img src="../assets/ft_equipe_1.jpg"></button>
+                                            <button type="button" class="btn btn-secondary"><img src="../assets/ft_equipe_2.jpg"></button>
+                                            <button type="button" class="btn btn-secondary"><img src="../assets/ft_equipe_3.jpg"></button>
+                                            <button type="button" class="btn btn-secondary"><img src="../assets/ft_equipe_4.jpg"></button>
+                                        </div>
+                                        
+                                        <hr class="my-4">
+                                        <h3>Depoimentos e Recomendações</h3>
+                                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>

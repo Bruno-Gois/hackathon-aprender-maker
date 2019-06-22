@@ -25,3 +25,19 @@
 .tablink {
     width: 100%;
 }
+
+.header_modal h5 {
+    float: left;
+    margin-left: 40px;
+    display: inline;
+}
+
+button img {
+    max-width:50px;
+    height:auto;
+}
+
+h5 + img {
+    max-width:50px;
+    height:auto;
+}

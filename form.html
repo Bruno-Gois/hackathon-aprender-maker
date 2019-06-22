@@ -6,425 +6,108 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js">
 </head>
 <body>
-<form class="form-horizontal">
-<fieldset>
- 
-<!-- Form Name -->
-<legend>PROPOSTA DE PROJETO</legend>
- 
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label">Nome*</label>
-  <div class="controls">
-    <input id="nome" name="nome" type="text" placeholder="Insira seu nome" class="input-xlarge" required>
-   
-  </div>
-</div>
-<br>
-
-<div class="control-group">
-       <label class="control-label">Título do Projeto*</label>
-       <div class="controls">
-         <input id="nome" name="nome" type="text" placeholder="Insira o título do projeto" class="input-xlarge" required>
-        
-       </div>
-</div>
-     <br>
- 
-     <fieldset>
- 
-            <!-- Form Name -->
-            <legend>IDENTIFICAÇÃO</legend>
-            <form class="form-vertical" class="border solid">
-
-            <!-- Tipos de Usuários -->
-            <div class="control-group">
-                    <label class="control-label">Proponente</label>
-                    <div class="controls">
-                    <label class="radio">
-                        <input type="radio" name="tipo_usu" value="Masculino" checked="checked">
-                        Professor
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="tipo_usu" value="Feminino">
-                        Aluno
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="tipo_usu" value="Feminino">
-                        Comunidade
-                        </label>
-                    </div>
+    <div class="container">
+        <div class="col-md-12">
+                <div>
+                    <form action="/action_page.php">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="fname">Nome Completo</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="fname" name="firstname" placeholder="Digite seu nome completo">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="lname">Título do Projeto  </label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="lname" name="lastname" placeholder="Digite o nome do Projeto">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="country">Proponente</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="country" name="country" >
+                                    <option value="australia">Aluno</option>
+                                    <option value="canada">Professor</option>
+                                    <option value="usa">Comunidade</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="country">Turma</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="country" name="country">
+                                    <option>1º ano "A" - Matutino</option>
+                                    <option>2º ano "A" - Matutino</option>
+                                    <option>3º ano "A" - Matutino</option>
+                                    <option>1º ano "B" - Vespertino</option>
+                                    <option>2º ano "B" - Vespertino</option>
+                                    <option>3º ano "B" - Vespertino</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="country">Componentes Currícular</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="country" name="country">
+                                    <option>Ciências Exatas e da Natureza</option>
+                                    <option>Educação para a Diversidade e Cidadania</option>
+                                    <option>Educação em e para os Direitos Humanos</option>
+                                    <option>Educação para a Sustentabilidade</option>
+                                    <option>Ciências Humanas</option>
+                                    <option>Linguagens</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="country">Formas de avaliação</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="country" name="country">
+                                    <option>Produção de jogos/gamificação, materiais didáticos, intervenções no espaço da escola, etc</option>
+                                    <option>Produção de evento (campeonato, apresentação, festival, teatro, criação de simulados, gincanas, etc)</option>   
+                                    <option>Criação de material ou canal informativo (blog, canal no YouTube, página de Facebook/Instagram, meme, jornal, zine, programa de rádio, etc)</option>
+                                    <option>Realização de atividades acadêmicas (listas de exercícios, roteiros de pesquisa, produção de texto, produção de diário de bordo, portfólio, etc.)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="subject">Descrição, Objetivos e Justificativa Pedagógica</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="subject" name="subject" placeholder="Descreva aqui o seu projeto e sua justificativa pedagógica" style="height:200px"></textarea>
+                            </div>        
+                        </div>
+                    </form>
+                    
                 </div>
+                <div class="interna">
+                        <input type="submit" value="Enviar">
+                </div>
+        </div>
+        <div>
                 
-            
-        </form>
-    
-    
-    <!-- Select Basic -->
-    <div class="control-group">
-      <label class="control-label">Turma</label>
-      <div class="controls">
-        <select id="turma" name="turma" class="input-xlarge">
-          <option>1º ano "A" - Matutino</option>
-          <option>2º ano "A" - Matutino</option>
-          <option>3º ano "A" - Matutino</option>
-          <option>1º ano "B" - Vespertino</option>
-          <option>2º ano "B" - Vespertino</option>
-          <option>3º ano "B" - Vespertino</option>
-        </select>
-      </div>
-      <br>
-      <label class="control-label">Componente Curricular</label>
-      <div class="controls">
-        <select id="comp" name="comp" class="input-xlarge">
-          <option>Ciências Exatas e da Natureza</option>
-          <option>XXXXXXXXXXXXXXXXXXXXXXXXXXX</option>
-          <option>XXXXXXXXXXXXXXXXXXXXXXXXXXX</option>
-          <option>1XXXXXXXXXXXXXXXXXXXXXXXXXXX</option>
-          <option>2XXXXXXXXXXXXXXXXXXXXXXXXXXX</option>
-          <option>3XXXXXXXXXXXXXXXXXXXXXXXXXXX</option>
-        </select>
-      </div>
-      <br>
-        
-    </div>  
-     </fieldset>
-     <fieldset>
- 
-            <!-- Form Name -->
-            <legend>DESCRIÇÃO E JUSTIFICATIVA PEDAGÓGICA</legend>
-            <form class="form-vertical" class="border solid">
-
-          
-      <div class="control-group">
-            
-            <textarea >
-
-            </textarea>
-            
-                    
-            
-        </div>
-        <br>
-    </div>  
-     </fieldset>
-     <fieldset>
- 
-            <!-- Form Name -->
-            <legend>OBJETIVOS PEDAGÓGICOS</legend>
-            <form class="form-vertical" class="border solid">
-
-          
-      <div class="control-group">
-            
-            <textarea >
-
-            </textarea>
-            
-                    
-            
-        </div>
-        <br>
-    </div>  
-     </fieldset>
-     <fieldset>
- 
-            <!-- Form Name -->
-            <legend>ÁREAS DO CONHECIMENTO</legend>
-            <form class="form-vertical" class="border solid">
-
-          
-      <div class="control-group">
-            <label class="control-label"></label>
-            <div class="controls">
-            <label class="control-label">Linguagens</label>
-            <br>
-            <label class="checkbox">
-                <input type="checkbox" name="tipo_usu" value="Masculino" checked="checked">
-                Português 
-            </label>
-            <label class="checkbox">
-                <input type="checkbox" name="tipo_usu" value="Feminino">
-                Espanhol
-            </label>
-            <label class="checkbox">
-                <input type="checkbox" name="tipo_usu" value="Feminino">
-                Inglês
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" name="tipo_usu" value="Feminino">
-                    Educação Física
-                </label>
-            </div>
-            <br>
-            <label class="control-label"></label>
-            <div class="controls">
-            <label class="control-label">Ciências Exatas e da Natureza</label>
-            <br>
-            <label class="checkbox">
-                <input type="checkbox" name="tipo_usu" value="Masculino" checked="checked">
-                Física 
-            </label>
-            <label class="checkbox">
-                <input type="checkbox" name="tipo_usu" value="Feminino">
-                Química
-            </label>
-            <label class="checkbox">
-                <input type="checkbox" name="tipo_usu" value="Feminino">
-                Biologia
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" name="tipo_usu" value="Feminino">
-                    Matemática e suas tecnologias
-                </label>
-            <br>
-            <br>
-                <label class="control-label"></label>
-                <div class="controls">
-                <label class="control-label">Ciências Humanas</label>
-                <br>
-                <label class="checkbox">
-                    <input type="checkbox" name="tipo_usu" value="Masculino" checked="checked">
-                    Filosofia 
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" name="tipo_usu" value="Feminino">
-                    História
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" name="tipo_usu" value="Feminino">
-                    Geografia
-                    </label>
-                    <label class="checkbox">
-                    <input type="checkbox" name="tipo_usu" value="Feminino">
-                        Sociologia
-                    </label>
-                    
-            </div>
-        </div>
-        <br>
-    </div>  
-     </fieldset>
-     <fieldset>
- 
-            <!-- Form Name -->
-            <legend>EIXOS TRANSVERSAIS</legend>
-            <form class="form-vertical" class="border solid">
-
-          
-      <div class="control-group">
-            <label class="control-label"></label>
-            <div class="controls">
-            
-            <label class="radio">
-                <input type="radio" name="tipo_usu" value="Masculino" checked="checked">
-                Educação para a Diversidade e Cidadania 
-            </label>
-            <label class="radio">
-                <input type="radio" name="tipo_usu" value="Feminino">
-                Educação em/e para os Direitos Humanos
-            </label>
-            <label class="radio">
-                <input type="radio" name="tipo_usu" value="Feminino">
-                Educação para a Sustentabilidade
-                </label>
-             
-            </div>
-            
-                    
-            
-        </div>
-        <br>
-    </div>  
-     </fieldset>
-     <fieldset>
- 
-            <!-- Form Name -->
-            <legend>PILARES DA INSTITUIÇÃO</legend>
-            <form class="form-vertical" class="border solid">
-
-          
-      <div class="control-group">
-            <label class="control-label"></label>
-            <div class="controls">
-            
-            <label class="radio">
-                <input type="radio" name="tipo_usu" value="Masculino" checked="checked">
-                Conhecimento Científico 
-            </label>
-            <label class="radio">
-                <input type="radio" name="tipo_usu" value="Feminino">
-                Expressão Artística e Corporal
-            </label>
-            <label class="radio">
-                <input type="radio" name="tipo_usu" value="Feminino">
-                Comunicação e Letramentos
-                </label>
-             
-            </div>
-            
-                    
-            
-        </div>
-        <br>
-    </div>  
-     </fieldset>
-     
-     <fieldset>
- 
-            <!-- Form Name -->
-            <legend>FORMAS DE AVALIAÇÃO</legend>
-            <form class="form-vertical" class="border solid">
-                    <label class="control-label"></label>
-                <div class="controls">
-               
-                <br>
-                <label class="checkbox">
-                    <input type="checkbox" name="tipo_usu" value="Masculino" checked="checked">
-                    Criação de material ou canal informativo (blog, canal no YouTube, página de Facebook/Instagram, meme, jornal, zine, programa de rádio, etc);
-                </label>
-                <br>
-                <label class="checkbox">
-                    <input type="checkbox" name="tipo_usu" value="Feminino">
-                    Produção de jogos/gamificação, materiais didáticos, intervenções no espaço da escola, etc;
-                </label>
-                <br>
-                <label class="checkbox">
-                    <input type="checkbox" name="tipo_usu" value="Feminino">
-                    Produção de evento (campeonato, apresentação, festival, teatro, criação de simulados, gincanas, etc);
-                    </label>
-                    <br>
-                    <label class="checkbox">
-                    <input type="checkbox" name="tipo_usu" value="Feminino">
-                    Realização de atividades acadêmicas (listas de exercícios, roteiros de pesquisa, produção de texto, produção de diário de bordo, portfólio, etc.);
-                    </label>
-                    
-                    
-                    </div>
-                   
-                    
-            
-        </div>
-        <br>
-    </div>  
-     </fieldset>
-     <fieldset>
- 
-            <!-- Form Name -->
-            <legend>CRONOGRAMA DAS ATIVIDADES</legend>
-            <form class="form-vertical" class="border solid">
-                    <label class="control-label"></label>
-                <div class="controls">
-               
-                <br>
-                <label class="checkbox">
-                    <input type="checkbox" name="tipo_usu" value="Masculino" checked="checked">
-                    27/07
-                </label>
-                <br>
-                <label class="checkbox">
-                    <input type="checkbox" name="tipo_usu" value="Feminino">
-                    29/07
-                </label>
-                <br>
-                <label class="checkbox">
-                    <input type="checkbox" name="tipo_usu" value="Feminino">
-                    03/08
-                    </label>
-                    <br>
-                    <label class="checkbox">
-                    <input type="checkbox" name="tipo_usu" value="Feminino">
-                    05/08
-                    </label>
-                    <label class="checkbox">
-                    </div>
-                   
-                    
-            
-        </div>
-        <br>
-    </div>  
-     </fieldset>
-     <fieldset>
- 
-            <!-- Form Name -->
-            <legend>LOCAL</legend>
-            <form class="form-vertical" class="border solid">
-
-          
-      <div class="control-group">
-            <label class="control-label"></label>
-            <div class="controls">
-            
-            <label class="radio">
-                <input type="checkbox" name="tipo_usu" value="Masculino" checked="checked">
-                Onde se possa produzir ruídos
-            </label>
-            <br>
-            <label class="radio">
-                <input type="checkbox" name="tipo_usu" value="Feminino">
-                Que seja silencioso
-            </label>
-            <br>
-            <label class="radio">
-                <input type="checkbox" name="tipo_usu" value="Feminino">
-                Com acesso a equipamentos. 
-                
-            </label>
-               
-            <label class="control-label">Quais?</label>
-            <input id="nome" name="nome" type="text" placeholder="" class="input-xlarge" required>
-            <br> 
-               
-            <label class="radio">
-                    <input type="checkbox" name="tipo_usu" value="Feminino">
-                    Local aberto. 
-                    
-                </label>
-                   
-                <label class="control-label">Qual?</label>
-                <input id="nome" name="nome" type="text" placeholder="" class="input-xlarge" required>
-                    
-            <br>
-                
-            <label class="radio">
-                <input type="checkbox" name="tipo_usu" value="Feminino">
-                Sala de Aula
-            </label>
-                
-                   
-                    <br>
-            
-        </div>
-        <br>
-    </div>  
-     </fieldset>
-    
-    
- 
-     <br>
-     <br>
-     <br>     
-<!-- File Button -->
-<div class="control-group">
-  <label class="control-label">Foto</label>
-  <div class="controls">
-    <input id="foto" name="foto" class="input-file" type="file">
-  </div>
-</div>
- 
-<!-- Button -->
-<div class="control-group">
-  <label class="control-label"></label>
-  <div class="controls">
-    <button id="enviar" name="enviar" class="btn btn-primary">Enviar</button>
-  </div>
-</div>
- 
-</fieldset>
-</form>
+    </div>
+  
  
 </body>
 </html>

@@ -7,7 +7,21 @@
     background: #007bff;
     background: linear-gradient(to right, #0062E6, #33AEFF);
   }
+
+  #slogan{
+    background-color:transparent !important;
+  }
   
+  .display-4 {
+    color: white;
+}
+.container p {
+  color: white; 
+}
+
+#btnCadastro {
+  color: white;
+}
   .card-signin {
     border: 0;
     border-radius: 1rem;
